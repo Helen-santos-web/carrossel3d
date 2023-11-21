@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    background: rgba(40, 187, 89, 0.897); 
+    font-family: sans-serif;
+    color: #ffffff;
+} 
+
+.container{
+    position: relative;
+    width: 300px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    background: #00000000;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCgf0G-qfWmDHQQcGokhe_ZIlICwh8V2R8Jg&usqp=CAU);
+    transform: rotateY(0deg) translatez(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJ8a_Y-6B8djPWK-m4tsH1GIuEdaevWSguQ&usqp=CAU);
+    transform: rotateY(40deg) translatez(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://epipoca.com.br/wp-content/uploads/2023/06/fionna-cake-hora-de-aventura.jpg);
+    transform: rotateY(80deg) translatez(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://images2.wikia.nocookie.net/__cb20120724232931/tudosobrehoradeaventura/pt-br/images/8/8c/Pld_17.png);
+    transform: rotateY(120deg) translatez(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT76oFgAjb5YeRm5ndiOBTXwl-HCL3BZ4viCA&usqp=CAU);
+    transform: rotateY(160deg) translatez(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2UG_jcPfwZXADVJOnWvFf26uFr9B_0ZMFmw&usqp=CAU);
+    transform: rotateY(200deg) translatez(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqiWFR0_vIMjWobeYP8dMk0MaBaq-uyHSgg&usqp=CAU);
+    transform: rotateY(240deg) translatez(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://theamazingnerd.files.wordpress.com/2014/02/post-photo-2-110.png);
+    transform: rotateY(280deg) translatez(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRPhtobXcriTGMt3i5QZlljCMFeycaV3IDug&usqp=CAU);
+    transform: rotateY(320deg) translatez(430px);
+}
